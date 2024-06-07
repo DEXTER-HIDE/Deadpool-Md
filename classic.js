@@ -1,7 +1,7 @@
 /*
 
-› Create By Haikal (HW MODS)
-› Base Ori Haikal (HW MODS)
+› Create By 𝗱𝗲𝘅𝘁𝗲𝗿 (DEXTER MODS)
+› Base Ori  (DEXTER MODS)
 
 🌷 KALAU MAU RENAME TARO CREDITS GUA : Haikal (HW MODS)
    • [ Recode Bye > ZetsuboXygen777]
@@ -7798,9 +7798,9 @@ case 'broadcast':
             }
             break
 //=================================================
-case "alive":
+case "menu":
 
-const audiovn = "./Deadpool.mp3";
+const audiovn = "./Dexter.mp3";
     const dooc = {
         audio: {
           url: audiovn
@@ -7813,10 +7813,10 @@ const audiovn = "./Deadpool.mp3";
         contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
-          title: "𝙳𝙴𝙰𝙳𝙿𝙾𝙾𝙻 𝙸𝚂 𝙰𝙻𝙸𝚅𝙴💀",
-          body: "https://chat.whatsapp.com/Cl7CwM1UC9YEOWEiCzLAfe",
-          thumbnailUrl: "https://telegra.ph/file/e72bd57ff8ed761e85b4a.jpg",
-          sourceUrl: "https://whatsapp.com/channel/0029Vag3MeuGJP8LZb1Okj39",
+          title: "𝗗𝗘𝗫𝗧𝗘𝗥 𝗠𝗗 𝗕𝗨𝗚 𝗠𝗘𝗡𝗨 💀",
+          body: "",
+          thumbnailUrl: "https://telegra.ph/file/7f87b500538623d91075d.jpg",
+          sourceUrl: "",
           mediaType: 1,
           renderLargerThumbnail: true
           }}
@@ -7827,16 +7827,36 @@ await zetsubo.sendMessage(m.chat, dooc, {quoted: m});
 
 
 break;
-//=================================================
-case 'cecanvietnam': {
-if (isBan) return reply('*Lu Di Ban Owner Gak Usah Sok asik Tolol*')
-await loading()
-let { pinterest } = require('./lib/scraper')
-anu = await pinterest(`cecan vietnam`)
-result = anu[Math.floor(Math.random() * anu.length)]
-zetsubo.sendMessage(from, {image: { url: result }, caption: 'SUKSES'},{quoted:m})
-}
-break
+///=================================================
+case "dexter":
+
+const audiovn = "./king.mp3";
+    const dooc = {
+        audio: {
+          url: audiovn
+        },
+        mimetype: 'audio/mp4',
+        ptt: true,
+        waveform:  [100, 0, 100, 0, 100, 0, 100],
+        fileName: "",
+
+        contextInfo: {
+          mentionedJid: [m.sender],
+          externalAdReply: {
+          title: "𝗗𝗘𝗫𝗧𝗘𝗥 𝗠𝗗 𝗕𝗨𝗚 𝗠𝗘𝗡𝗨 💀",
+          body: "",
+          thumbnailUrl: "https://telegra.ph/file/7f87b500538623d91075d.jpg",
+          sourceUrl: "",
+          mediaType: 1,
+          renderLargerThumbnail: true
+          }}
+      };
+
+
+await zetsubo.sendMessage(m.chat, dooc, {quoted: m});
+
+
+break;
 //=================================================
 case 'rentbot':
                 reply(`Type ${prefix}owner and chat him`)
@@ -7894,7 +7914,7 @@ case 'rentbot':
             }
             break
 //=================================================
-case 'autostatusview':
+case 'status':
                 if (!isCreator) return reply(`Successfully changed auto status/story view`)
                 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
                 if (q === 'on') {
